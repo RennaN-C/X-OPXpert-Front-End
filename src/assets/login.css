@@ -1,12 +1,13 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+@import url('https-fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.login-page-wrapper {
+  font-family: 'Poppins', sans-serif;
   background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  color: white;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .login-container {
@@ -84,7 +85,7 @@ input {
 
 .login-image {
   flex: 1;
-  background: url("/logo.png") center no-repeat;
+  background: url("/logo.png") content-box;
   background-size: contain;
   background-color: rgba(255, 255, 255, 0.05);
 }

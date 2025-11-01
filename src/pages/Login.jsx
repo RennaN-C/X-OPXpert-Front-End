@@ -29,39 +29,41 @@ function LoginPage() {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-form">
-        <h2>Faça seu login!</h2>
-        
-        <form onSubmit={handleLogin}>
-          <label htmlFor="usuario">Usuário:</label>
-          <input 
-            id="usuario" 
-            placeholder="Usuário" 
-            type="text"
-            value={usuario}
-            onChange={(e) => setUsuario(e.target.value)}
-          />
+    <div className="login-page-wrapper">
+      <div className="login-container">
+        <div className="login-form">
+          <h2>Faça seu login!</h2>
           
-          <label htmlFor="senha">Senha:</label>
-          <input 
-            id="senha" 
-            placeholder="Senha" 
-            type="password" 
-            value={senha}
-            onChange={(e) => setSenha(e.target.value)}
-          />
-          
-          <a href="#">Esqueci minha senha</a>
-          
-          <button type="submit" className="btn-login">Login</button>
-          
-          <Link className="btn-cadastro" to="/cadastro">
-            Precisa de acesso? Solicitar credenciais
-          </Link>
-        </form>
+          <form onSubmit={handleLogin}>
+            <label htmlFor="usuario">Usuário:</label>
+            <input 
+              id="usuario" 
+              placeholder="Usuário" 
+              type="text"
+              value={usuario}
+              onChange={(e) => setUsuario(e.target.value)}
+            />
+            
+            <label htmlFor="senha">Senha:</label>
+            <input 
+              id="senha" 
+              placeholder="Senha" 
+              type="password" 
+              value={senha}
+              onChange={(e) => setSenha(e.target.value)}
+            />
+            
+            <a href="#">Esqueci minha senha</a>
+            
+            <button type="submit" className="btn-login">Login</button>
+            
+            <Link className="btn-cadastro" to="/cadastro">
+              Precisa de acesso? Solicitar credenciais
+            </Link>
+          </form>
+        </div>
+        <div className="login-image"></div>
       </div>
-      <div className="login-image"></div>
     </div>
   );
 }
