@@ -132,7 +132,7 @@ function OrdensProducaoPage() {
             <th>Código</th>
             <th>Ambiente</th>
             <th>Cliente</th>
-            <th>Responsável (REQ006)</th>
+            <th>Responsável </th>
             <th>Prioridade</th>
             <th>Status</th>
             <th>Progresso</th>

@@ -61,7 +61,7 @@ function NovaOrdemPage() {
       <p>Preencha os dados para criar uma nova ordem.</p>
       <form onSubmit={handleSubmit} className="form-container">
         
-        <label htmlFor="codigo_ordem_auto">Código da Ordem (REQ001)</label>
+        <label htmlFor="codigo_ordem_auto">Código da Ordem </label>
         <input 
           type="text" 
           id="codigo_ordem_auto"

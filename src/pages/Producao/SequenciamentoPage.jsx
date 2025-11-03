@@ -110,7 +110,7 @@ function SequenciamentoPage() {
 
   return (
     <div>
-      <h1>↔️ Sequenciamento de Produção (REQ004)</h1>
+      <h1>↔️ Sequenciamento de Produção </h1>
       <p>Arraste e solte as ordens abaixo para definir a fila de produção.</p>
       
       <div style={{
